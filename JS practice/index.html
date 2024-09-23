@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS clientX and ClientY</title>
+</head>
+
+<body>
+
+
+    <script>
+        document.addEventListener('mousemove', function (e) {
+            console.clear();
+            var x = e.x;
+            var y = e.y;
+
+            console.log("clientX: " + x);
+            console.log("clientY: " + y);
+        })
+    </script>
+</body>
+
+</html>

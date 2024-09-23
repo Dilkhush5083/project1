@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard keys</title>
+</head>
+<style>
+    #box {
+        width: 500px;
+        aspect-ratio: 1;
+        background-color: bisque;
+        border: solid 1px black;
+    }
+</style>
+
+<body>
+    <div id="box">
+
+    </div>
+
+    <script>
+        var target = document.querySelector("#box");
+        target.addEventListener("click", function (e) {
+            console.clear();
+            var k;
+            switch (true) {
+                case e.ctrlKey:
+                    k = "control key";
+                    break;
+
+                case e.shiftKey:
+                    k = "shift key";
+                    break;
+
+                case e.altKey:
+                    k = "alt key";
+                    break;
+
+                case e.metaKey:
+                    k = "meta key";
+                    break;
+
+                default:
+                    k = "Other key pressed";
+                    break;
+
+
+            }
+
+            console.log(k);
+        });
+    </script>
+</body>
+
+</html>
